@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class SayHelloController {
 
-@RequestMapping("sayHello.jsp")
-@ResponseBody
- public String sayHello(){
-     return "hello web_API";
+@RequestMapping("sayHello")
+public String sayHello(){
+    System.out.println("hi");
+    return "home";
  }
+
 }
